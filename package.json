@@ -26,6 +26,7 @@
     "stop:remote": "office-addin-debugging stop manifest_remote.xml",
     "stop": "office-addin-debugging stop manifest.xml",
     "validate": "office-addin-manifest validate manifest.xml",
+    "validate:remote": "office-addin-manifest validate manifest_remote.xml",
     "watch": "webpack --mode development --watch"
   },
   "dependencies": {
