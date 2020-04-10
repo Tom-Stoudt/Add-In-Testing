@@ -22,12 +22,15 @@
     "start": "office-addin-debugging start manifest.xml",
     "start:desktop": "office-addin-debugging start manifest.xml desktop",
     "start:web": "office-addin-debugging start manifest.xml web",
-    "start:remote": "office-addin-debugging start manifest_remote.xml",
-    "stop:remote": "office-addin-debugging stop manifest_remote.xml",
     "stop": "office-addin-debugging stop manifest.xml",
     "validate": "office-addin-manifest validate manifest.xml",
+    "watch": "webpack --mode development --watch",
     "validate:remote": "office-addin-manifest validate manifest_remote.xml",
-    "watch": "webpack --mode development --watch"
+    "start:remote": "office-addin-debugging start manifest_remote.xml",
+    "stop:remote": "office-addin-debugging stop manifest_remote.xml",
+    "guid:remote": "office-addin-manifest modify manifest_remote.xml -g",
+    "register:remote": "office-addin-dev-settings register manifest_remote.xml",
+    "sideload:remote": "office-addin-dev-settings sideload manifest_remote.xml"
   },
   "dependencies": {
     "@angular/common": "^5.2.9",
